@@ -1,0 +1,55 @@
+:root {
+    --lightBlue: #4e87f7;
+    --darkBlue: #240452;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    color: white;
+    background: rgb(78,135,247);
+    background: linear-gradient(90deg, rgba(78,135,247,1) 0%, rgba(36,4,82,1) 100%);
+    text-align: center;
+    padding: 10px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+section {
+    margin-top: 20px;
+}
+
+#searchBtn {
+    background-color: var(--lightBlue);
+}
+#searchBtn:hover {
+    background-color: #3464c4;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: lightgray;
+}
+
+#todayWeather {
+    border: 1px solid black;
+}
+
+.day {
+    background-color: var(--darkBlue);
+}
+
+.fiveDate {
+    font-weight: 700;
+}
+
+
