@@ -32,7 +32,7 @@ $(function () {
     // load weather from history
     function loadCity(event) {
         var city = $(event.target).text();
-        var locationUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=5&appid=2df2f52cc55e3cc6610e9af8185701f0"
+        var locationUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=5&appid=2df2f52cc55e3cc6610e9af8185701f0"
         $.ajax({
             url: locationUrl,
             method: 'GET',
@@ -51,7 +51,7 @@ $(function () {
     function findCity(event) {
         event.preventDefault();
         var city = inputSearch.val();
-        var locationUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=5&appid=2df2f52cc55e3cc6610e9af8185701f0"
+        var locationUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=5&appid=2df2f52cc55e3cc6610e9af8185701f0"
         $.ajax({
             url: locationUrl,
             method: 'GET',
@@ -73,7 +73,7 @@ $(function () {
 
     // get weather with latitude and longitude
     function findWeather(lat, lon) {
-        var weatherUrl = "http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&units=imperial&appid=2df2f52cc55e3cc6610e9af8185701f0"
+        var weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&units=imperial&appid=2df2f52cc55e3cc6610e9af8185701f0"
         $.ajax({
             url: weatherUrl,
             method: 'GET',
