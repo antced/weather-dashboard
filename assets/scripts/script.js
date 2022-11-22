@@ -128,7 +128,7 @@ $(function () {
     }
 
     // display weather objects in readable format
-    function displayWeather(fiveDayArr) 
+    function displayWeather(fiveDayArr) {
         // display 5day weather
         for (var i = 0; i < fiveDayChildren.length; i++) {
             var cards = $(fiveDayChildren[i]);
@@ -138,7 +138,7 @@ $(function () {
             cards.children(".fiveWind").text("Wind: " + fiveDayArr[i].wind + " MPH");
             cards.children(".fiveHumidity").text("Humidity: " + fiveDayArr[i].humidity + " %");
         }
-    }
+    }      
 
     function clearHistory() {
         localStorage.clear();
