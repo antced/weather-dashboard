@@ -30,13 +30,14 @@
                         <h3 class="form-label">Search for a City:</h3>
                         <input type="search" class="form-control" id="inputSearch" aria-describedby="emailHelp">
                     </div>
-                    <button type="submit" class="btn btn-primary w-100" id="searchBtn">Search</button>
+                    <button type="submit" class="btn btn-primary w-100 border-0" id="searchBtn">Search</button>
                 </form>
 
                 <hr />
 
                 <div class="row-lg-6">
                     <ul class="col-lg-12 text-center p-0" id="historyList">
+                        <li class="mb-3 rounded p-2 bg-danger text-white" id="clearBtn">Clear Search History</li>
                     </ul>
 
                 </div>
@@ -45,7 +46,7 @@
             <div class="col-lg-9" id="weatherSection">
                 <!-- main weather row -->
                 <div class="row mb-3" id="todayWeather">
-                    <h1 id="cityName">City Name (Today's Date)</h1>
+                    <h1 id="cityName">City Name (Today's Date)<span><img src="http://openweathermap.org/img/wn/10d.png" alt="weathericon" class="todayIcon"></span></h1>
                     <p id="todayTemp">Temp:</p>
                     <p id="todayWind">Wind:</p>
                     <p id="todayHumidity">Humidity:</p>
